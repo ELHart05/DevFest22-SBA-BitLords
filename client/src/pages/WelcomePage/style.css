@@ -1,0 +1,180 @@
+@keyframes rotation {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .blog-post-container:nth-child(even) .blogImg {
+    order: 1;
+  }
+  .blog-post-container:nth-child(even) .blog-content {
+    order: 2;
+  }
+  
+  .blog-post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+  }
+  @media screen and (max-width: 700px) {
+    .blog-post-container {
+      flex-direction: column;
+      height: unset;
+    }
+  }
+  .blog-post-container .blog-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 3;
+    height: 100%;
+  }
+  @media screen and (max-width: 800px) {
+    .blog-post-container .blog-content {
+      flex: 4;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .blog-post-container .blog-content {
+      order: 2;
+    }
+  }
+  .blog-post-container .blog-content .blog-content-wrapper {
+    width: 100%;
+    padding: 0 24px;
+    max-width: 375px;
+  }
+  @media screen and (max-width: 700px) {
+    .blog-post-container .blog-content .blog-content-wrapper {
+      max-width: 340px;
+      padding: 72px 24px;
+    }
+  }
+  .blog-post-container .blog-content .blog-content-wrapper h2 {
+    font-weight: 300;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  @media screen and (max-width: 700px) {
+    .blog-post-container .blog-content .blog-content-wrapper h2 {
+      font-size: 32px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .blog-post-container .blog-content .blog-content-wrapper h2 {
+      font-size: 25px;
+    }
+  }
+  .blog-post-container .blog-content .blog-content-wrapper p {
+    margin: 25px 0;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+  .blog-post-container .blog-content .blog-content-wrapper .posts-a {
+    color: black;
+  }
+  .blog-post-container .blog-content .blog-content-wrapper .posts-a:hover {
+    text-decoration-color: black;
+  }
+  .blog-post-container .blog-content .blog-content-wrapper .welcome-a {
+    color: white;
+  }
+  .blog-post-container .blog-content .blog-content-wrapper .welcome-a:hover {
+    text-decoration-color: white;
+  }
+  .blog-post-container .blog-content .blog-content-wrapper a {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    text-decoration: underline 0.2px rgba(255, 255, 255, 0);
+    text-underline-offset: 3px;
+    transition: 300ms;
+    padding-top: 10px;
+    width: fit-content;
+  }
+  .blog-post-container .blog-content .blog-content-wrapper a svg {
+    margin-left: 5px;
+    height: 15px;
+    width: 15px;
+  }
+  .blog-post-container .blog-content .blog-content-wrapper .tags {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 15px;
+    width: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .blog-post-container .blog-content .blog-content-wrapper .tags::-webkit-scrollbar {
+    display: none;
+  }
+  .blog-post-container .blog-content .blog-content-wrapper .tags .tag {
+    transition: 0.5s;
+    padding: 6px;
+    font-size: 13px;
+    border-radius: 8px;
+    background-color: #303030;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .blog-post-container .blog-content .blog-content-wrapper .tags .tag:hover {
+    border-color: gray;
+    background-color: gray;
+  }
+  .blog-post-container .blogImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex: 4;
+    height: 100%;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 800px) {
+    .blog-post-container .blogImg {
+      flex: 3;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .blog-post-container .blogImg {
+      width: 100%;
+      flex: unset;
+      order: 1;
+    }
+  }
+  .blog-post-container .blogImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .blog-post-container .blogImg .loader {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    border-color: black transparent black transparent;
+    animation: rotation infinite 900ms ease-in-out;
+  }
+  .blog-post-container .blogImg .welcomeLoader {
+    border-color: white transparent white transparent;
+  }
+  .blog-post-container .blogImg .displayed {
+    display: flex;
+  }
+  @media screen and (max-width: 700px) {
+    .blog-post-container .setHight {
+      min-height: 300px;
+    }
+  }
+  
+  .welcome {
+    background-color: #303030;
+    color: white;
+  }

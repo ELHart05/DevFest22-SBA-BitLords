@@ -1,0 +1,139 @@
+.profile form .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    border-radius: 50%;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .profile form div button {
+    text-align: center;
+    padding: 12px 24px;
+    color: #fff;
+    background-color: #303030;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .profile form div button:hover {
+    background-color: grey;
+  }
+  
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 25px;
+  }
+  .profile h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: 300;
+    font-size: 32px;
+  }
+  .profile form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 32px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 32px;
+    background-color: #f1f1f1;
+    width: 100%;
+    max-width: 600px;
+    row-gap: 32px;
+  }
+  .profile form .admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: 0.5s;
+    padding: 8px 24px 8px 15px;
+    border: none;
+    background-color: #303030;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .profile form .admin:hover {
+    background-color: gray;
+  }
+  .profile form .admin svg {
+    position: relative;
+    left: 8px;
+    height: 15px;
+    width: 15px;
+  }
+  .profile form .user {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  .profile form .user span::selection {
+    background-color: transparent;
+  }
+  .profile form input[type=color] {
+    visibility: hidden;
+    position: fixed;
+    top: -30px;
+    left: 0;
+  }
+  .profile form .inputs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+  .profile form .inputs .protected {
+    border: 1px solid #303030;
+  }
+  textarea{
+    resize: none;
+    width: 100%;
+    padding: 8px 24px 8px 15px;
+    outline: none;
+    background-color: #f2f7f6;
+    cursor: pointer;
+  }
+  .profile form .inputs input {
+    border: none;
+    outline: none;
+    background-color: #f2f7f6;
+    padding: 8px;
+    height: 50px;
+    width: 100%;
+  }
+  .profile form .inputs label {
+    cursor: pointer;
+    font-size: 14px;
+    display: block;
+    padding-bottom: 6px;
+  }
+  .profile form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .profile form div .delete-account {
+    background-color: red;
+  }

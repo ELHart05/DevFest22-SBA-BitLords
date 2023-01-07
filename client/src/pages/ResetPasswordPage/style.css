@@ -1,0 +1,101 @@
+.forgot-password-container .form-content form button {
+    text-align: center;
+    padding: 12px 24px;
+    color: #fff;
+    background-color: #303030;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .forgot-password-container .form-content form button:hover {
+    background-color: grey;
+  }
+  
+  .forgot-password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .forgot-password-container .form-content {
+    width: 38%;
+    height: 100%;
+    display: flex;
+  }
+  @media screen and (max-width: 900px) {
+    .forgot-password-container .form-content {
+      width: 100%;
+    }
+  }
+  .forgot-password-container .form-content form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+    flex: 1;
+  }
+  @media screen and (max-width: 900px) {
+    .forgot-password-container .form-content form {
+      padding: 0 10px;
+    }
+  }
+  .forgot-password-container .form-content form .back {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .forgot-password-container .form-content form .back a {
+    transition: 300ms;
+    margin-left: 2px;
+    color: #000;
+  }
+  .forgot-password-container .form-content form .back a:hover {
+    text-decoration: none;
+    color: grey;
+  }
+  .forgot-password-container .form-content form .forgot-content {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .forgot-password-container .form-content form h2 {
+    color: #303030;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 900px) {
+    .forgot-password-container .form-content form h2 {
+      font-size: 32px;
+    }
+  }
+  .forgot-password-container .form-content form .inputs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+  }
+  .forgot-password-container .form-content form .inputs svg {
+    font-weight: 800;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    margin: 17px 0 0 8px;
+  }
+  .forgot-password-container .form-content form .inputs input {
+    outline: none;
+    border: transparent;
+    padding: 4px 4px 4px 30px;
+    height: 50px;
+    width: 100%;
+    background-color: #f2f7f6;
+    cursor: pointer;
+  }
+  .forgot-password-container .form-content form button {
+    margin-top: 35px;
+  }/*# sourceMappingURL=style.css.map */
